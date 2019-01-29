@@ -69,8 +69,19 @@ function getSpotifySong(params) {
             query: params
         })
         .then(function (response) {
-            console.log(JSON.stringify(response, null, 2));
-            // console.log("Artist: ", response.)
+            // console.log(JSON.stringify(response, null, 2));
+            var data = response.tracks.items;
+
+            for (let i = 0; i < data.length; i++) {
+                console.log("===================================")
+                console.log("NUMBER: " + i + "/" + data.length)
+                console.log("Artist: ", data[i].artists[0].name)
+                console.log("song: ", data[i].name)
+                console.log("Preview: ", data[i].preview_url)
+                console.log("Album: ", data[i].album.name)
+                console.log("===================================")
+            }
+
         })
         .catch(function (err) { 
             console.log(err);
