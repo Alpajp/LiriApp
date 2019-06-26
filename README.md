@@ -8,7 +8,7 @@ screenshot link: https://imgur.com/a/Ol7OeHP
 This project allows a user to search spotify for song, Bands in town for concert and OMBDI for movies or do at the command of "node liri.js > . Have Fun.
 
 How to use
-Use node to run this program. Use node liri.js then run one of the following comands, then add search text:
+ node to run this program. Use node liri.js then run one of the following comands, then add search text:
 
 * concert-this
 * spotify-this-song
